@@ -1,12 +1,13 @@
 import React from "react";
 import playerImg from "./playerImg.svg";
 import {connect} from "react-redux";
+import handleMovement from "./movement";
 
 function Player(props){
     return(
         <div
         style={{
-            position:"relative",
+            position:"absolute",
             top: props.position[1],
             left: props.position[0],
             backgroundImage: `url(${playerImg})`,
@@ -23,4 +24,4 @@ function mapStateToProps(state){
     }
 }
 
-export default connect(mapStateToProps)(Player);
+export default connect(mapStateToProps)(handleMovement(Player));
