@@ -1,10 +1,11 @@
 import React from 'react';
-import Player from './features/player';
+import './App.css';
+import World from './features/world';
 
 function App() {
   return (
-    <div>
-      <Player/>
+    <div className="App">
+      <World />
     </div>
   );
 }
