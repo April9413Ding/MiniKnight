@@ -1,11 +1,13 @@
 import {createStore, combineReducers} from "redux";
 import playerReducer from "../features/player/reducer";
 import mapReducer from "../features/map/reducer"
+import keyBoardReducer from "../features/keyboard/reducer";
 
 
 const rootReducer = combineReducers({
     player: playerReducer,
     map: mapReducer,
+    keyBoard: keyBoardReducer,
 })
 
 const store = createStore(
