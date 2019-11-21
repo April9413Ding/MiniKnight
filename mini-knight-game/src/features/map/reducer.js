@@ -1,11 +1,12 @@
-
 const initialState ={
-    position:[720,0],
+    mapObject:[],
+    mapWallsV:[],
+    mapWallsH:[],
 }
 
-const playerReducer = (state=initialState,action)=>{
+const mapReducer = (state=initialState,action)=>{
     switch(action.type){
-        case "MOVE_PLAYER":
+        case "DRAW_MAP":
             return{
                 ...action.payload
             }
@@ -15,4 +16,4 @@ const playerReducer = (state=initialState,action)=>{
     }
 }
 
-export default playerReducer;
+export default mapReducer;

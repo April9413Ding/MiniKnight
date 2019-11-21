@@ -1,4 +1,15 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
 }
 
+button{
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  margin: 0.3rem;
+}

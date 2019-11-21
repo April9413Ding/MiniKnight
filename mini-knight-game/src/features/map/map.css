@@ -1,0 +1,61 @@
+.wallRowH{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wallsH{
+    height: 6px;
+    width: 80px;
+}
+
+.wallH{
+    background-color: black;
+}
+
+.doorH{
+    border: 1px dashed black;
+    background-color: white;
+}
+
+.wallRowV{
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+.wallsV{
+    height: 80px;
+    width: 6px;
+}
+
+.wallV{
+    background-color: black;
+}
+
+.doorV{
+    border: 1px dashed black;
+    background-color: white;
+}
+
+.objectRow{
+    display: flex;
+}
+
+.object{
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.floor{
+    background-color: transparent;
+}
+
+.portal{
+    background-image: url("./Portal.svg");
+}
+
+.key{
+    background-image: url("./Key.svg");
+}
